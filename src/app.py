@@ -46,13 +46,13 @@ def setup_llm(openai_api_key):
  
 def fe_setup():
     #App configuration
-    chevron_icon = Image.open("deloitte-logo.png")
+    chevron_icon = Image.open("logo.png")
     st.set_page_config(page_title="Chat with your file",page_icon=chevron_icon)
     col1, mid, col2 = st.columns([1,1,20])
     with col1:
         st.image(chevron_icon, width=60)
     with col2:
-        st.header('Deloitte Tabular Question Answering Chatbot')
+        st.header('Tabular Question Answering Chatbot')
  
 
 @tool("query_dataframe", return_direct=True)
