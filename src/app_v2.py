@@ -62,7 +62,7 @@ for message in st.session_state.chat_history:
                     with col1:
                         st.image(chevron_icon, width=60)
                     with col2:
-                        st.header('Deloitte Tabular Question Answering Chatbot')
+                        st.header('Tabular Question Answering Chatbot')
 
                 @tool("query_dataframe", return_direct=True)
                 def query_dataframe(self, user_input):
